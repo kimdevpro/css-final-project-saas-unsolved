@@ -1,0 +1,167 @@
+.hire-us {
+  background-color: #20335B;
+  color: white;
+  padding: 100px 40px;
+}
+
+.hire-container {
+  display: flex;
+  gap: 60px;
+  max-width: 1024px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+.hire-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hire-left h2 {
+  font-size: 26px; 
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hire-left .subheading {
+  font-size: 18px;
+  color: #677788;
+  margin-bottom: 40px;
+}
+
+.hire-us-line {
+  color: #FFFFFF;
+  width: 370px;
+  height: 1px;
+  margin-bottom: 34px;
+}
+
+.hire-left blockquote {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 34px;
+  gap: 34px;
+  color: #FFFFFF;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.author-info .name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.author-info .role {
+  font-size: 14px;
+  color: #677788;
+  margin-bottom: 30px;
+}
+
+.author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  gap: 30px;
+}
+
+/* RIGHT FORM SIDE */
+.hire-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 482px;
+  font-size: 14px;
+}
+
+.hire-form h3 {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+input, select, textarea {
+  display: flex;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #E6E8F2;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.checkbox-label {
+  display: flex;
+  gap: 16px;
+  color: #828282;
+  align-items: flex-start;
+}
+
+.checkbox-label input {
+  margin-top: 4px;
+  width: 25px;
+}
+
+.submit-button {
+  background-color: #2476FF;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(37, 99, 235, 0.4);
+  transition: all 0.3s ease;
+  align-self: center;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.privacy-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #677788;
+}
+
+.privacy-links a {
+  text-decoration: underline;
+}
+
+.privacy-links a:hover {
+  color: #2476FF;
+}

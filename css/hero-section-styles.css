@@ -1,0 +1,117 @@
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    height: 446px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: url('../assets/bg/background-top.svg') no-repeat center center;
+    position: relative;
+    background-size: contain;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.play-video {
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 14px 30px;
+    font-weight: 600;
+    border-radius: 30px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.play-video:hover {
+    background-color: #fff;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.learn-more {
+    font-weight: 600;
+    color: #374151;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+    color: #2563eb;
+}
+
+/* ICONS */
+.hero-icons {
+    position: relative;
+    width: 482px;
+    height: 406px;
+}
+
+/* All icons same base style */
+.icon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    object-fit: scale-down;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+/* Positioning icons */
+.icon-google { width: 60px; height: 60px; top: 10px; left: 64px;  padding: 10px;} 
+.icon-atlassian { top: 10px; left: 175px;} 
+.icon-asana { top: 10px; left: 380px;} 
+.icon-paypal { top: 172px; left: 44px; } 
+.icon-weave { top: 172px; left: 262px;}
+.icon-googleads { width: 60px; height: 60px; top: 290px; left: 155px; border-radius: 30px; padding: 10px;}
+.icon-calendar { top: 310px; left: 364px; } 
+
+
+/* Keyframe Animations */
+@keyframes fadeInLeft {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@media (min-width: 1024px) {
+    .icon-left {
+        animation: fadeInLeft 1s ease forwards;
+    }
+
+    .icon-right {
+        animation: fadeInRight 1s ease forwards;
+    }
+    
+}
+

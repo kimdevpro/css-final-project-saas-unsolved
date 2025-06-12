@@ -1,10 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Saas company</title>
-  </head>
-  <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Build - From Scratch</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/hero-section-styles.css">
+    <link rel="stylesheet" href="./css/why-section-styles.css">
+    <link rel="stylesheet" href="./css/hire-us-section.css">
+    <link rel="stylesheet" href="./css/pricing-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="./assets/logos/logo-front.svg" alt="Front Logo">
+        </div>
+
+        <div class="nav-group">
+          <nav class="nav-links">
+              <a href="#">Home</a>
+              <a href="#">Features</a>
+              <a href="#">Learn</a>
+              <a href="#">Pricing</a>
+              <a href="#">Hire us</a>
+          </nav>
+          <button class="buy-now">Buy Now</button>
+        </div>
+    </header>
+
+    <section class="hero">
+    <div class="hero-content">
+        <h1>Empowering teams with the freedom</h1>
+        <p>Own the unlimited power of the web development</p>
+
+        <div class="hero-buttons">
+            <button class="play-video">
+                <span class="play-icon">▶</span> Play Video
+            </button>
+            <a href="#" class="learn-more">Learn more</a>
+        </div>
+    </div>
+
+    <div class="hero-icons">
+        <img src="./assets/logos/google.png" class="icon icon-google" alt="Google Logo">
+        <img src="./assets/logos/atlassian.png" class="icon icon-atlassian" alt="Atlassian Logo">
+        <img src="./assets/logos/asana.png" class="icon icon-asana" alt="Asana Logo">
+        <img src="./assets/logos/paypal.jpg" class="icon icon-paypal" alt="PayPal Logo">
+        <img src="./assets/logos/weave.png" class="icon icon-weave" alt="Weave Logo">
+        <img src="./assets/logos/google-ads.png" class="icon icon-googleads" alt="Google Ads Logo">
+        <img src="./assets/logos/calendar.png" class="icon icon-calendar" alt="Calendar Logo">
+    </div>
+    </section>
+
+    <section class="why">
+    <div class="why-content">
+        <h2>Why front?</h2>
+        <p>Front is an incredibly beautiful, fully responsive, and mobile-first project on the web - it is the starting point for creative sites</p>
+    </div>
+
+    <div class="why-features">
+        <div class="feature-item">
+        <div class="feature-icon">
+            <div class="feature-inner-circle"></div>
+        </div>
+        <div class="feature-label">Basic elements</div>
+        </div>
+
+        <div class="feature-item">
+        <div class="feature-icon">
+            <div class="feature-inner-circle"></div>
+        </div>
+        <div class="feature-label">Components</div>
+        </div>
+
+        <div class="feature-item">
+        <div class="feature-icon">
+            <div class="feature-inner-circle"></div>
+        </div>
+        <div class="feature-label">Combined components</div>
+        </div>
+
+        <div class="feature-item">
+        <div class="feature-icon">
+            <div class="feature-inner-circle"></div>
+        </div>
+        <div class="feature-label">Page layouts</div>
+        </div>
+    </div>
+    </section>
+
+    <section class="pricing">
+    <div class="pricing-header">
+        <h2>Pricing</h2>
+        <p>No additional costs. Pay for what you use</p>
+    </div>
+
+    <div class="pricing-container">
+        <!-- Left Pricing Box -->
+        <div class="pricing-box">
+        <div class="price">
+            <span class="amount">59</span><span class="per">/ mo</span>
+        </div>
+        <p>Start your Front business now. 100% guaranteed money back. No questions asked.</p>
+        <button class="play-button">
+            <span class="play-icon">▶</span> Play Video
+        </button>
+        <small>No credit card required.</small>
+        </div>
+
+        <!-- Right Features -->
+        <div class="pricing-features">
+        <div class="feature-item">
+            <img src="./assets/images/components.svg" alt="Components Icon Image">
+            <h3>Hundreds of components</h3>
+            <p>Achieve maximum productivity with minimum effort with Front and create robust Limitless products.</p>
+        </div>
+
+        <div class="feature-item">
+            <img src="./assets/images/images.svg" alt="Images Icon Image">
+            <h3>Images included</h3>
+            <p>We made custom license for all our premium images in the front.</p>
+        </div>
+
+        <div class="feature-item">
+            <img src="./assets/images/cancel.svg" alt="Cancel Icon Image">
+            <h3>Cancel anytime <span class="sketch-badge">sketch</span></h3>
+            <p>If it is not for you, just cancel, no hidden costs or fees.</p>
+        </div>
+
+        <div class="feature-item">
+            <img src="./assets/images/moneyback.svg" alt="Money Back Icon Image">
+            <h3>Money back</h3>
+            <p>100% guaranteed money back. No questions asked.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="hire-us">
+    <div class="hire-container">
+    
+    <!-- Left testimonial -->
+    <div class="hire-left">
+      <h2>Hire Us</h2>
+      <p class="subheading">Whatever your goal — we will get you there</p>
+      <hr class="hire-us-line">
+      <blockquote>
+        “I love front! I love the ease of use, I love the fact that I have total creative freedom...”
+      </blockquote>
+
+      <div class="author">
+        <div class="author-info">
+          <div class="name">Charlotte Moore</div>
+          <div class="role">Head of Commercials, Slack</div>
+          <img src="./assets/images/man_one.jpg" alt="Charlotte Moore">
+        </div>
+      </div>
+    </div>
+
+    <!-- Right form -->
+    <div class="hire-form">
+      <h3>Fill out the form and we'll be in touch as soon as possible</h3>
+      
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+        </div>
+
+        <input type="email" placeholder="Email">
+
+        <div class="form-row">
+          <select>
+            <option>Budget</option>
+          </select>
+
+          <select>
+            <option>Country</option>
+          </select>
+        </div>
+
+        <textarea placeholder="Tell us more about your project, needs, and timeline..."></textarea>
+
+        <label class="checkbox-label">
+            <input type="checkbox">
+            <div class="checkbox-text">
+                Yes, I'd like to receive occasional marketing emails from Front.
+            </div>
+        </label>
+        <div class="privacy-links">
+            <a href="#">View privacy policy</a>
+        </div>
+        <button type="submit" class="submit-button">Submit Form</button>
+      </form>
+    </div>
+
+    </div>
+    </section>
+
+    <footer class="footer">
+    <div class="footer-container">
+        <!-- Left Column -->
+        <div class="footer-brand">
+        <img src="./assets/logos/logo-front.svg" alt="Front Logo">
+        <p>153 Williamson Plaza, Maggieberg</p>
+        <a href="tel:+10621099222">+1 (062) 109-9222</a>
+        </div>
+
+        <!-- Navigation Columns -->
+        <div class="footer-nav">
+        <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Career <span class="hiring-badge">We’re hiring</span></a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Hire us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Features</h4>
+            <ul>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Release notes</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Pricing</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Documentation</h4>
+            <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Tech Requirements</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Your Account</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </footer>
+</body>
 </html>
+
