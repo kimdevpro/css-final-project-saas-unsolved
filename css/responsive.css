@@ -1,0 +1,89 @@
+@media (min-width: 1024px) {
+
+    /*========== TOP NAVIGATION ==========*/
+
+
+    /*========== HERO SECTION ==========*/
+
+
+    /*========== WHY SECTION ==========*/
+
+    /*========== PRICING SECTION ==========*/
+
+    /*========== HIRE US SECTION ==========*/
+
+    /*========== FOOTER SECTION ==========*/
+
+
+
+
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+  
+    /*========== TOP NAVIGATION ==========*/
+    .hamburger {
+        display: block;
+    }
+
+    .nav-group {
+        display: none;
+    }
+    /* create box shadow and freeze menu bar at top mobile devices */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+    }
+    
+    /*========== HERO SECTION ==========*/
+
+
+    /*========== WHY SECTION ==========*/
+
+    /*========== PRICING SECTION ==========*/
+
+    /*========== HIRE US SECTION ==========*/
+
+    /*========== FOOTER SECTION ==========*/
+    .footer-column a:hover {
+        color: initial;
+    }
+
+    .footer-container,
+    .footer-nav {
+        flex-direction: row;
+        flex: 1;
+    }
+
+}
+    /* Mobile Only */
+    @media (max-width: 767px) {
+    /*========== TOP NAVIGATION ==========*/
+
+    /*========== HERO SECTION ==========*/
+
+
+    /*========== WHY SECTION ==========*/
+
+    /*========== PRICING SECTION ==========*/
+
+    /*========== HIRE US SECTION ==========*/
+
+    /*========== FOOTER SECTION ==========*/
+    .footer-container,
+    .footer-nav {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .footer-column ul li {
+        display: flex;
+        justify-content: center;
+    }
+}

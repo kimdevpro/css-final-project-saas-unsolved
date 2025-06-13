@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./css/why-section-styles.css">
     <link rel="stylesheet" href="./css/hire-us-section.css">
     <link rel="stylesheet" href="./css/pricing-styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -17,7 +19,9 @@
         <div class="logo">
             <img src="./assets/logos/logo-front.svg" alt="Front Logo">
         </div>
-
+        <div> 
+            <button class="hamburger" id="hamburger"> &#9776; </button> 
+        </div>
         <div class="nav-group">
           <nav class="nav-links">
               <a href="#">Home</a>
@@ -185,10 +189,7 @@
         <textarea placeholder="Tell us more about your project, needs, and timeline..."></textarea>
 
         <label class="checkbox-label">
-            <input type="checkbox">
-            <div class="checkbox-text">
-                Yes, I'd like to receive occasional marketing emails from Front.
-            </div>
+            <input type="checkbox">Yes, I'd like to receive occasional marketing emails from Front.
         </label>
         <div class="privacy-links">
             <a href="#">View privacy policy</a>
@@ -205,8 +206,8 @@
         <!-- Left Column -->
         <div class="footer-brand">
         <img src="./assets/logos/logo-front.svg" alt="Front Logo">
-        <p>153 Williamson Plaza, Maggieberg</p>
-        <a href="tel:+10621099222">+1 (062) 109-9222</a>
+        <p><i class="fa-solid fa-location-arrow"></i>153 Williamson Plaza, Maggieberg</p>
+        <a href="tel:+10621099222"><i class="fas fa-phone"></i>+1 (062) 109-9222</a>
         </div>
 
         <!-- Navigation Columns -->
@@ -246,8 +247,19 @@
         <div class="footer-column">
             <h4>Resources</h4>
             <ul>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Your Account</a></li>
+                <li>
+                    <div class="footer-icon-row">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <a href="#">Help</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="footer-icon-row">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <a href="#">Your Account</a>
+                    </div>
+                </li>
             </ul>
         </div>
         </div>
