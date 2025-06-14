@@ -96,11 +96,9 @@ body {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
+  flex-basis: 50%;
   gap: 40px;
+  justify-content: space-between;
 }
 
 .footer-brand img {
@@ -119,22 +117,21 @@ body {
 }
 
 footer i {
-    color: #677788;
-    font-size: 12px;
-    font-weight: 900;
-    padding: 5px;
+  color: #677788;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 5px;
 }
 
 .footer-icon-row {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .footer-nav {
   display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .footer-column h4 {

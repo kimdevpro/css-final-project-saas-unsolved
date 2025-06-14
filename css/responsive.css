@@ -55,12 +55,16 @@
         color: initial;
     }
 
-    .footer-container,
     .footer-nav {
-        flex-direction: row;
-        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        gap: 80px;
     }
 
+    .footer-column {
+        flex-grow: 1;
+    }
 }
     /* Mobile Only */
     @media (max-width: 767px) {
