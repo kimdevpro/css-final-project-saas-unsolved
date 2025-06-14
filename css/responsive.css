@@ -49,6 +49,13 @@
     /*========== PRICING SECTION ==========*/
 
     /*========== HIRE US SECTION ==========*/
+    .hire-container {
+        flex-direction: column;
+    }
+
+    .testimonial-author-row {
+        flex-direction: row; 
+    }
 
     /*========== FOOTER SECTION ==========*/
     .footer-column a:hover {
@@ -78,6 +85,36 @@
     /*========== PRICING SECTION ==========*/
 
     /*========== HIRE US SECTION ==========*/
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .hire-container {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .testimonial-author-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .author {
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .author-info .name,
+    .author-info .role {
+        text-align: center;
+    }
+
+    .checkbox-label {
+        text-align: left;
+        display: flex;
+    }
 
     /*========== FOOTER SECTION ==========*/
     .footer-container,

@@ -6,86 +6,97 @@
 
 .hire-container {
   display: flex;
-  gap: 60px;
-  max-width: 1024px;
+  flex-direction: row;
+  gap: 30px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  flex: 1 1;
 }
 
-/* LEFT SIDE */
-.hire-left {
-  flex: 1;
-  min-width: 300px;
+/* Testimonial & Author Layout */
+.testimonial-author-row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
 }
 
-.hire-left h2 {
-  font-size: 26px; 
-  font-weight: 700;
-  margin-bottom: 20px;
+.testimonial {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hire-us h2 {
+  font-size: 26px;
 }
 
 .hire-left .subheading {
   font-size: 18px;
+  font-weight: 500;
   color: #677788;
-  margin-bottom: 40px;
 }
 
 .hire-us-line {
   color: #FFFFFF;
-  width: 370px;
   height: 1px;
-  margin-bottom: 34px;
+  width: 100%;
+  margin: auto;
 }
 
-.hire-left blockquote {
+blockquote {
   font-size: 16px;
+  font-weight: 500;
   font-style: italic;
-  margin-bottom: 34px;
-  gap: 34px;
   color: #FFFFFF;
 }
 
 .author {
+  flex: 1;
+  align-items: flex-start;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 20px;
+  text-align: center;
 }
 
 .author-info .name {
+  text-align: left;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 4px;
 }
 
 .author-info .role {
   font-size: 14px;
   color: #677788;
-  margin-bottom: 30px;
 }
 
 .author img {
-  width: 60px;
-  height: 60px;
+  justify-self: left;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid white;
-  gap: 30px;
 }
 
-/* RIGHT FORM SIDE */
+/* Right Form Side */
 .hire-form {
   background-color: white;
   border-radius: 10px;
   padding: 30px;
-  width: 482px;
+  width: 100%;
   font-size: 14px;
+  color: black;
+  margin-top: 40px;
 }
 
 .hire-form h3 {
   font-size: 16px;
   margin-bottom: 30px;
-  color: black;
 }
 
 form {
@@ -97,37 +108,58 @@ form {
 .form-row {
   display: flex;
   gap: 20px;
-  flex-direction: row;
-  justify-content: left;
-  align-items: flex-start;
-  flex-wrap: nowrap;
+  width: 100%;
 }
 
 input, select, textarea {
-  display: flex;
   padding: 14px 16px;
   border-radius: 8px;
   border: 1px solid #E6E8F2;
   font-size: 16px;
-  width: 100%;
   box-sizing: border-box;
 }
 
+.form-row input,
+.form-row select {
+  flex: 1;
+}
+
 textarea {
-  height: 120px;
+  height: 150px;
   resize: vertical;
 }
 
 .checkbox-label {
-  display: flex;
-  gap: 16px;
+  display: block;
+  font-size: 14px;
   color: #828282;
-  align-items: flex-start;
+  width: 100%;
+  height: 100%;
 }
 
-.checkbox-label input {
-  margin-top: 4px;
+.checkbox-label input[type="checkbox"] {
+  justify-content: center;
   width: 25px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.privacy-links {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #677788;
+}
+
+.privacy-links a {
+  text-decoration: underline;
+}
+
+.privacy-links a:hover {
+  color: #2476FF;
 }
 
 .submit-button {
@@ -148,20 +180,4 @@ textarea {
   background-color: white;
   color: #2563eb;
   border: 1px solid #2563eb;
-}
-
-.privacy-links {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #677788;
-}
-
-.privacy-links a {
-  text-decoration: underline;
-}
-
-.privacy-links a:hover {
-  color: #2476FF;
 }
