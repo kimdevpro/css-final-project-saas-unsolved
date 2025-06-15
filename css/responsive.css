@@ -42,8 +42,19 @@
     }
     
     /*========== HERO SECTION ==========*/
+    .hero {
+        flex-direction: column;
+        width: 100%;
+    }
 
+    .hero-content {
+        text-align: center;
+        margin-bottom:  60px;
+    }
 
+    .hero-buttons {
+        justify-content: center;
+    }
     /*========== WHY SECTION ==========*/
 
     /*========== PRICING SECTION ==========*/

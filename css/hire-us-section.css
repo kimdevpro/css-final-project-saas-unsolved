@@ -129,6 +129,13 @@ textarea {
   resize: vertical;
 }
 
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
 .checkbox-label {
   display: block;
   font-size: 14px;
@@ -145,13 +152,12 @@ textarea {
   vertical-align: middle;
 }
 
+
 .privacy-links {
   display: flex;
-  justify-content: center;
-  align-self: center;
-  margin-top: 10px;
   font-size: 14px;
   color: #677788;
+  padding-left: 40px;
 }
 
 .privacy-links a {

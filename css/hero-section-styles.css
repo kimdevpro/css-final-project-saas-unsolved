@@ -1,14 +1,11 @@
 /* Hero Section Styles */
 .hero {
     display: flex;
-    height: 446px;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
     background: url('../assets/bg/background-top.svg') no-repeat center center;
-    position: relative;
+    padding: 100px 30px 30px;
     background-size: contain;
 }
 
@@ -17,8 +14,9 @@
 }
 
 .hero-content h1 {
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 20px;
+    color: black;
 }
 
 .hero-content p {
@@ -64,34 +62,44 @@
     color: #2563eb;
 }
 
-/* ICONS */
+.hero-icons-wrapper {
+  position: relative;
+  width: 500px;
+  height: 446px;
+}
+
 .hero-icons {
-    position: relative;
-    width: 482px;
-    height: 406px;
+  position: relative;
+  width: 100%;
+  height: 446px;
 }
 
-/* All icons same base style */
-.icon {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background: white;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    object-fit: scale-down;
-    border-radius: 50%;
-    padding: 16px;
+.icon-container {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Positioning icons */
-.icon-google { width: 60px; height: 60px; top: 10px; left: 64px;  padding: 10px;} 
-.icon-atlassian { top: 10px; left: 175px;} 
-.icon-asana { top: 10px; left: 380px;} 
+.icon-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.icon-google { width: 60px; height: 60px; top: 60px; left: 64px; padding: 10px;} 
+.icon-atlassian { top: 10px; left: 175px;}  
+.icon-asana { top: 10px; left: 380px; } 
 .icon-paypal { top: 172px; left: 44px; } 
-.icon-weave { top: 172px; left: 262px;}
-.icon-googleads { width: 60px; height: 60px; top: 290px; left: 155px; border-radius: 30px; padding: 10px;}
-.icon-calendar { top: 310px; left: 364px; } 
-
+.icon-weave { top: 172px; left: 262px; }
+.icon-google-ads { width: 60px; height: 60px; top: 290px; left: 155px; padding: 10px;}
+.icon-calendar { top: 310px; left: 364px; }
 
 /* Keyframe Animations */
 @keyframes fadeInLeft {
