@@ -7,6 +7,7 @@
 .why-content h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: black;
 }
 
 .why-content p {
@@ -16,56 +17,54 @@
   margin: 0 auto 40px auto;
 }
 
-/* THE FULL GRID SOLUTION */
-.why-features {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto;
-  justify-items: center;
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
   position: relative;
-  margin-top: 80px;
 }
 
-/* THE CENTER LINE */
-.why-features::before {
+/* Draw full background line */
+.steps-container::after {
   content: "";
   position: absolute;
-  top: 25px;
-  left: calc(12.5% + 25px);
-  right: calc(12.5% + 25px);
-  height: 0;
-  border-top: 1px dotted #e6e9f2;
-  z-index: 0;
+  top: 65px;
+  left: 80px;
+  right: 80px;
+  height: 1px;
+  background-color: #e0e0e0;
+  z-index: 0; /* behind everything */
 }
 
-.feature-item {
+.step {
   position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1; /* above the line */
 }
 
-.feature-icon {
+.circle {
   width: 50px;
   height: 50px;
+  background-color: #ECF2FF;
   border-radius: 50%;
-  background-color: #ecf2ff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
-.feature-inner-circle {
-  width: 10px;
-  height: 10px;
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #2563eb;
   border-radius: 50%;
-  background-color: #0066ff;
 }
 
-.feature-label {
-  font-size: 18px;
+.label {
+  margin-top: 20px;
   font-weight: 600;
-  color: #333;
+  font-size: 16px;
+  color: #000;
 }
