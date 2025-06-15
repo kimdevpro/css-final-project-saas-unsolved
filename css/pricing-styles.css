@@ -5,46 +5,48 @@
 }
 
 .pricing-header h2 {
-  font-size: 36px;
+  font-size: 26px;
   margin-bottom: 10px;
+  color: black;
 }
 
 .pricing-header p {
   font-size: 18px;
-  color: #677788;
+  color:  #677788;
   margin-bottom: 60px;
 }
 
 /* Main pricing container layout */
 .pricing-container {
   display: flex;
-  align-items: start;
+  flex-basis: 50%;
   gap: 40px;
-  margin: 0 auto;
-  padding: 0 40px;
+  justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 /* LEFT SIDE BOX */
 .pricing-box {
   background-color: white;
+  border: 1px solid #E6E8F2;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   padding: 40px 30px;
-  width: 370px;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: left;
 }
 
 .price {
-  font-size: 48px;
+  font-size: 26px;
+  font-weight: 500;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .price .amount {
-  font-size: 48px;
+  font-size: 50px;
   color: #000;
 }
 
@@ -56,6 +58,7 @@
 .pricing-box p {
   color: #677788;
   font-size: 16px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -63,13 +66,13 @@
   background-color: #2563eb;
   color: white;
   border: none;
-  padding: 14px 24px;
   border-radius: 50px;
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
   margin-bottom: 10px;
-  display: inline-flex;
   align-items: center;
+  width: 50%;
+  padding: 20px;
   gap: 10px;
   box-shadow: 0 5px 20px rgba(37, 99, 235, 0.4);
   transition: all 0.3s ease;
@@ -81,7 +84,8 @@
   border: 1px solid #2563eb;
 }
 
-.pricing-box small {
+.pricing-box span {
+  font-size: 12px;
   color: #999;
 }
 
@@ -109,6 +113,7 @@
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: black;
 }
 
 .feature-item p {

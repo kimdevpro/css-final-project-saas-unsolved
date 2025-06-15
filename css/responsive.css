@@ -19,7 +19,7 @@
 
 }
 
-/* Tablet & Mobile */
+/* TABLET AND MOBILE */
 @media (max-width: 1023px) {
   
     /*========== TOP NAVIGATION ==========*/
@@ -47,7 +47,17 @@
     /*========== WHY SECTION ==========*/
 
     /*========== PRICING SECTION ==========*/
+    .pricing-container {
+        flex-direction: column;
+    }
 
+    .pricing-box {
+        box-shadow: none;
+        text-align: center;
+    }
+    .play-button {
+        width: auto;
+    }
     /*========== HIRE US SECTION ==========*/
     .hire-container {
         flex-direction: column;
@@ -73,7 +83,7 @@
         flex-grow: 1;
     }
 }
-    /* Mobile Only */
+    /* MOBILE ONLY */
     @media (max-width: 767px) {
     /*========== TOP NAVIGATION ==========*/
 
@@ -83,6 +93,9 @@
     /*========== WHY SECTION ==========*/
 
     /*========== PRICING SECTION ==========*/
+    .pricing-features {
+        grid-template-columns: 1fr;
+    }
 
     /*========== HIRE US SECTION ==========*/
     .form-row {
